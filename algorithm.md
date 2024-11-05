@@ -4,7 +4,7 @@
 
 1. function for rolling the dies with a rng
 2. function for getting the sum of the 2 numbers from the roll 2-12
-3. function for gathering the data in a chart like :
+3. function for gathering the data in a chart like example:
 
    [2, 8, 11, 11, 15, 15, 17, 9, 7, 4, 1]                                                                                
    Sum of 02 **
