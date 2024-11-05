@@ -2,20 +2,16 @@
 #### PLEASE! PLEASE! PLEASE! THINK before you code...
 
 
-1. function for rolling the dies with a rng
-2. function for getting the sum of the 2 numbers from the roll 2-12
-3. function for gathering the data in a chart like example:
+1. Ask the user how many times they want to roll the dice.
+2. Create a list, sum_counts, with 11 elements, each initialized to 0. This list will count the occurrences of each possible dice sum (from 2 to 12).
+3. For each roll (repeat num_rolls times):
+   1. Generate two random numbers between 1 and 6, representing the values on each die.
+   2. Calculate the sum of these two dice.
+   3. Update the corresponding index in sum_counts based on the calculated sum:
+   4. If the sum is s, increase sum_counts[s - 2] by 1.
+   5. For example, if the sum is 7, increment sum_counts[7 - 2], or sum_counts[5].
+4. ouput a header 
+5. For each possible sum from 2 to 12:
+   6. output the sum 
+   7. Append a number of * characters equal to the count stored in sum_counts for that sum.
 
-   [2, 8, 11, 11, 15, 15, 17, 9, 7, 4, 1]                                                                                
-   Sum of 02 **
-   Sum of 03 ********
-   Sum of 04 ***********
-   Sum of 05 ***********
-   Sum of 06 ***************
-   Sum of 07 ***************
-   Sum of 08 *****************
-   Sum of 09 *********
-   Sum of 10 *******
-   Sum of 11 ****
-   Sum of 12 *
-4. main function to call other functions as needed and ask for amount of rolls at the beginning 
