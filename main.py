@@ -8,7 +8,7 @@ def get_num_rolls():
 
     num_rolls = input("How many rolls would you like to do? ")
 
-    # Input validation without using 'while True'
+    # Input validation
     while num_rolls.isdigit() != True or int(num_rolls) <= 0:
         print("Invalid input. Please enter a positive integer.")
         num_rolls = input("How many rolls would you like to do? ")
@@ -32,7 +32,7 @@ def simulate_rolls(num_rolls):
     #     - num_rolls: Integer, the number of times to roll a pair of dice.
     # Return: List of integers representing the count of each sum from 2 to 12. Each index (0-10) corresponds to sums 2-12.
 
-    sum_counts = [0] * 11  # List to store counts for sums from 2 to 12
+    sum_counts = [0] * 11  # List to store counts
     _ = 0
     while _ != num_rolls:
         dice_sum = roll_dice()
@@ -65,7 +65,5 @@ def main():
     sum_counts = simulate_rolls(num_rolls)
     display_results(sum_counts)
 
-
-# Run the program
 if __name__ == "__main__":
     main()
